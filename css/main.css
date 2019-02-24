@@ -1,0 +1,649 @@
+@font-face {
+  font-family: "MuseoSans";
+  src: url(../fonts/MuseoSans_700.otf) format("OpenType");
+  }
+
+@font-face{
+  font-family: "MuseoParrafo";
+  src: url(../fonts/MuseoSans_500.otf) format("OpenType");
+}  
+
+@font-face{
+  font-family: "MuseoTitulo";
+  src: url(../fonts/MuseoSans_900.otf) format("OpenType");
+}  
+
+@font-face{
+  font-family: "Myriad";
+  src: url(../fonts/MyriadPro-Regular.otf) format("OpenType");
+}  
+
+  
+
+
+
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+  
+  .container {
+    width: 80%;
+    height: 40px;
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+  }
+  
+  #logo {
+    position: fixed;
+    width: 30%;
+    margin-top: -5px;
+    top: 0;
+    left: 0;
+    
+   
+   
+  }
+  .navigation-wrapper {
+    position: relative;
+  }
+  .navigation-button {
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    right: 100px;
+    background: transparent;
+    cursor: pointer;
+  }
+  .navigation-button .fa {
+    border: 2px solid #9ebb38;
+    border-radius: 3px;
+    padding: 5px;
+      color: #9ebb38;
+  }
+   
+  
+  .navigation-menu ul li {
+    list-style: none;
+    font-family: MuseoSans;
+    font-weight: 300;
+    color: hsl(0,0%,70%);
+    cursor: pointer;
+  }
+  
+  .navigation-menu {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background: #606060;
+    height: 100%;
+    transform: skewX(0deg) translate(100%,0);
+    transform-origin: top right;
+    transition: all .2s ease-in;
+    z-index: -1;
+  }
+  .navigation-menu ul {
+    transform: skewX(-8deg);
+    transform-origin: top left;
+    position: fixed;
+    right: 120px;
+    top: 120px;
+    width: 400px;
+    text-align: right;
+  
+  }
+  .navigation-menu ul li {
+    position: relative;
+      z-index: 999;
+    font-size: 32px;
+    color:#9ebb38;
+    line-height: 64px;
+  }
+  .navigation-menu ul li  a {
+    border: none;
+    color: #9ebb38;
+    text-decoration: none;
+  }
+  .navigation-menu.active {
+    transform: skewX(8deg) translate(0,0);
+      
+  }
+  
+  .navigation-menu li {
+    opacity: 0;
+    transform: translate(0, 10px);
+    transition: all .0s ease-in .3s;
+    
+  }
+  .navigation-menu.active li {
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all .2s ease-in 0s;
+  }
+  .navigation-menu.active li:nth-child(1) {
+    transition-delay: .3s;
+  }
+  .navigation-menu.active li:nth-child(2) {
+    transition-delay: .4s;
+  }
+  .navigation-menu.active li:nth-child(3) {
+    transition-delay: .5s;
+  }
+  .navigation-menu.active li:nth-child(4) {
+    transition-delay: .6s;
+  }
+  .navigation-menu.active li:nth-child(5) {
+    transition-delay: .7s;
+  }
+  .navigation-menu.active li:nth-child(6) {
+    transition-delay: .8s;
+  }
+  
+
+  section #banner{
+  width: 100%;
+	background-image: url(../image/image4.jpeg);
+	background-attachment: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+    
+  }
+
+ header{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color:transparent;
+	z-index: 1001;
+	-webkit-transition: background-color .5s;
+}
+
+
+
+#prin{
+  opacity: 0.9;
+  margin-top: -100px;
+  z-index: 2;
+  
+}
+
+#borde{
+  border-bottom: solid 2px #17649d;
+  width: 90%;
+  margin: 0px auto 0px auto;
+}
+
+#fondo{
+  background-image: url(../image/logo2.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.actividades{
+  font-family: MuseoTitulo;
+  width: 40%;
+  margin: 0px auto 0px auto;
+  border-bottom: 3px solid #9ebb38;
+  border-top: 3px solid #9ebb38;
+}
+
+
+
+div #fuente{
+  margin-top: 100px;
+  margin-left: 80px;
+  margin-right: 120px;
+}
+
+div #fotobio{
+  width: 150%;
+  margin-left: -120px;
+}
+
+.biografia{
+  font-family: MuseoTitulo;
+  width: 40%;
+  margin: 0px auto 0px auto;
+  border-bottom: 3px solid #9ebb38;
+  border-top: 3px solid #9ebb38;
+}
+
+.gestion{
+  font-family: MuseoTitulo;
+  width: 40%;
+  margin: 0px auto 0px auto;
+  border-bottom: 3px solid #9ebb38;
+  border-top: 3px solid #9ebb38;
+}
+
+.proyecto{
+  font-family: MuseoTitulo;
+  width: 40%;
+  margin: 0px auto 0px auto;
+  border-bottom: 3px solid #9ebb38;
+  border-top: 3px solid #9ebb38;
+}
+
+.social{
+  font-family: MuseoTitulo;
+  width: 40%;
+  margin: 0px auto 0px auto;
+  border-bottom: 3px solid #9ebb38;
+  border-top: 3px solid #9ebb38;
+}
+
+div .card{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: black;
+  overflow: hidden;
+}
+
+input{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 10;
+  opacity: 0;
+}
+
+div .toggle{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  right: 20px;
+  outline: none;
+  z-index: 10;
+}
+
+
+div .toggle{
+pointer-events: none;
+border-radius: 50%;
+background: #fff;
+transition: 0.5s;
+text-align: center;
+line-height: 50px;
+font-size: 36px;
+box-shadow: 0 0 0 0px #17649d;
+}
+
+input:checked ~ .toggle{
+  
+  box-shadow: 0 0 0 500px #17649d;
+  transform: rotate(225deg);
+
+}
+
+.imgBx, .details{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.details{
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 11;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0;
+
+}
+
+input:checked ~ .details{
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.details h2{
+  margin-bottom: 5px;
+  color:#fff;
+}
+
+.details p{
+  margin: 0;
+  padding: 0;
+  color:#fff;
+}
+
+.containerp{
+  width: 100%;
+  height: 400px;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.containerp .cardp{
+  width: 250px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.containerp .cardp:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.containerp .cardp i{
+  width: 250px;
+  height: 220px;
+}
+
+
+.containerp .cardp h4{
+  font-weight: 600;
+}
+
+.containerp .cardp p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.containerp .cardp a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.fab {
+
+color: black;
+}
+
+.cardp h4{
+  margin-top: -50px;
+}
+
+
+.fas {
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 10px;
+    color: #9ebb38;
+}
+
+h4 h5{
+font-family: MuseoParrafo;
+  
+}
+
+
+
+.ir-arriba {
+	display:none;
+	padding:0px;
+	background:#024959;
+	font-size:50px;
+	color:rgba(255, 255, 255, 0.774);
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+  right:20px;
+  opacity: 0.7;
+}
+
+p{
+  font-family: Myriad;
+}
+
+h1 h2{
+  font-family: MuseoSans;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+.margen{
+  margin-top: 400px;
+}
+
+
+footer{
+  background: #005AA8;
+  height: 200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  
+  
+}
+
+.middle{
+  
+  top: 50%;
+  margin-top: 70px;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.boton{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: #72717163;
+  margin: 50px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3B5999;
+  overflow: hidden;
+  position: relative;
+}
+.boton i{
+  margin-top: 50px;
+  line-height: 90px;
+  transition: 0.2s linear;
+}
+.boton:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.boton:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+#fc::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3B5999;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+#in::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #BC2A8D;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+#tw::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #429CD6;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+#wa::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #09D261;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+#abajo{
+  margin-top: 30px;
+  float: left;
+}
+
+div #leabajo{
+  margin-top: 50px;
+  text-align: left;
+  
+}
+
+.modal{
+  font-family: Myriad;
+  font-size: 20px;
+}
+
+.modal-title{
+  font-family: MuseoParrafo;
+  font-size: 20px;
+}
+
+#titulo{
+  margin-top: -500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+          
